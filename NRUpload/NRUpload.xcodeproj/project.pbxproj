@@ -1,0 +1,827 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		075F335BD7FCEDD94EA8A91F /* libPods-NRUploadUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EA0977A44A7E4BFB4AE5DC9 /* libPods-NRUploadUITests.a */; };
+		4C158C485B5B96E74237873E /* libPods-NRUpload.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E3F5882B39A886E97153BA6 /* libPods-NRUpload.a */; };
+		D0307E3520565841008CFE8F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D0307E3420565841008CFE8F /* AppDelegate.m */; };
+		D0307E3820565841008CFE8F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0307E3720565841008CFE8F /* ViewController.m */; };
+		D0307E3B20565841008CFE8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0307E3920565841008CFE8F /* Main.storyboard */; };
+		D0307E3D20565841008CFE8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0307E3C20565841008CFE8F /* Assets.xcassets */; };
+		D0307E4020565841008CFE8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0307E3E20565841008CFE8F /* LaunchScreen.storyboard */; };
+		D0307E4320565841008CFE8F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D0307E4220565841008CFE8F /* main.m */; };
+		D0307E4D20565841008CFE8F /* NRUploadTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D0307E4C20565841008CFE8F /* NRUploadTests.m */; };
+		D0307E5820565841008CFE8F /* NRUploadUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D0307E5720565841008CFE8F /* NRUploadUITests.m */; };
+		D0307E6B20565FA9008CFE8F /* NRFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D0307E6A20565FA9008CFE8F /* NRFileManager.m */; };
+		D0307E6F2056609A008CFE8F /* NSString+md5.m in Sources */ = {isa = PBXBuildFile; fileRef = D0307E6E2056609A008CFE8F /* NSString+md5.m */; };
+		D0307E7220566181008CFE8F /* NRFileStreamConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = D0307E7120566181008CFE8F /* NRFileStreamConfiguration.m */; };
+		D0307E75205662C4008CFE8F /* NRStreamFragment.m in Sources */ = {isa = PBXBuildFile; fileRef = D0307E74205662C4008CFE8F /* NRStreamFragment.m */; };
+		D0307E7820566E3E008CFE8F /* NRUploadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D0307E7720566E3E008CFE8F /* NRUploadManager.m */; };
+		D0307E7B20566F19008CFE8F /* NRUploadTask.m in Sources */ = {isa = PBXBuildFile; fileRef = D0307E7A20566F19008CFE8F /* NRUploadTask.m */; };
+		D0307E7F20566F71008CFE8F /* Const.m in Sources */ = {isa = PBXBuildFile; fileRef = D0307E7E20566F71008CFE8F /* Const.m */; };
+		DD2F17125D10D963DF522D1D /* libPods-NRUploadTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A6EED211169CA1D8DB117006 /* libPods-NRUploadTests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D0307E4920565841008CFE8F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D0307E2820565841008CFE8F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0307E2F20565841008CFE8F;
+			remoteInfo = NRUpload;
+		};
+		D0307E5420565841008CFE8F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D0307E2820565841008CFE8F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0307E2F20565841008CFE8F;
+			remoteInfo = NRUpload;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		20E6C2895566700501871A4D /* Pods-NRUploadTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NRUploadTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NRUploadTests/Pods-NRUploadTests.release.xcconfig"; sourceTree = "<group>"; };
+		30AD1879AB4ED98552968D1E /* Pods-NRUploadTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NRUploadTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NRUploadTests/Pods-NRUploadTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3B051D3EA70E2B73107890AD /* Pods-NRUploadUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NRUploadUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NRUploadUITests/Pods-NRUploadUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3E3F5882B39A886E97153BA6 /* libPods-NRUpload.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NRUpload.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EA0977A44A7E4BFB4AE5DC9 /* libPods-NRUploadUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NRUploadUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		40D2FECAE160083BFCE1D294 /* Pods-NRUpload.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NRUpload.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NRUpload/Pods-NRUpload.debug.xcconfig"; sourceTree = "<group>"; };
+		A6EED211169CA1D8DB117006 /* libPods-NRUploadTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NRUploadTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEC6B42080D004F70C3AE726 /* Pods-NRUpload.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NRUpload.release.xcconfig"; path = "Pods/Target Support Files/Pods-NRUpload/Pods-NRUpload.release.xcconfig"; sourceTree = "<group>"; };
+		D0307E3020565841008CFE8F /* NRUpload.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NRUpload.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0307E3320565841008CFE8F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D0307E3420565841008CFE8F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D0307E3620565841008CFE8F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D0307E3720565841008CFE8F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D0307E3A20565841008CFE8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D0307E3C20565841008CFE8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D0307E3F20565841008CFE8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D0307E4120565841008CFE8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0307E4220565841008CFE8F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D0307E4820565841008CFE8F /* NRUploadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NRUploadTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0307E4C20565841008CFE8F /* NRUploadTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NRUploadTests.m; sourceTree = "<group>"; };
+		D0307E4E20565841008CFE8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0307E5320565841008CFE8F /* NRUploadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NRUploadUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0307E5720565841008CFE8F /* NRUploadUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NRUploadUITests.m; sourceTree = "<group>"; };
+		D0307E5920565841008CFE8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0307E6920565FA9008CFE8F /* NRFileManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NRFileManager.h; sourceTree = "<group>"; };
+		D0307E6A20565FA9008CFE8F /* NRFileManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NRFileManager.m; sourceTree = "<group>"; };
+		D0307E6D2056609A008CFE8F /* NSString+md5.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+md5.h"; sourceTree = "<group>"; };
+		D0307E6E2056609A008CFE8F /* NSString+md5.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+md5.m"; sourceTree = "<group>"; };
+		D0307E7020566181008CFE8F /* NRFileStreamConfiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NRFileStreamConfiguration.h; sourceTree = "<group>"; };
+		D0307E7120566181008CFE8F /* NRFileStreamConfiguration.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NRFileStreamConfiguration.m; sourceTree = "<group>"; };
+		D0307E73205662C4008CFE8F /* NRStreamFragment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NRStreamFragment.h; sourceTree = "<group>"; };
+		D0307E74205662C4008CFE8F /* NRStreamFragment.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NRStreamFragment.m; sourceTree = "<group>"; };
+		D0307E7620566E3E008CFE8F /* NRUploadManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NRUploadManager.h; sourceTree = "<group>"; };
+		D0307E7720566E3E008CFE8F /* NRUploadManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NRUploadManager.m; sourceTree = "<group>"; };
+		D0307E7920566F19008CFE8F /* NRUploadTask.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NRUploadTask.h; sourceTree = "<group>"; };
+		D0307E7A20566F19008CFE8F /* NRUploadTask.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NRUploadTask.m; sourceTree = "<group>"; };
+		D0307E7D20566F71008CFE8F /* Const.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Const.h; sourceTree = "<group>"; };
+		D0307E7E20566F71008CFE8F /* Const.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Const.m; sourceTree = "<group>"; };
+		DA9B1C68B5FF0074E256A153 /* Pods-NRUploadUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NRUploadUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NRUploadUITests/Pods-NRUploadUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D0307E2D20565841008CFE8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C158C485B5B96E74237873E /* libPods-NRUpload.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0307E4520565841008CFE8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD2F17125D10D963DF522D1D /* libPods-NRUploadTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0307E5020565841008CFE8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				075F335BD7FCEDD94EA8A91F /* libPods-NRUploadUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		46DE1D580CF8DE9409A76CD0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				40D2FECAE160083BFCE1D294 /* Pods-NRUpload.debug.xcconfig */,
+				CEC6B42080D004F70C3AE726 /* Pods-NRUpload.release.xcconfig */,
+				30AD1879AB4ED98552968D1E /* Pods-NRUploadTests.debug.xcconfig */,
+				20E6C2895566700501871A4D /* Pods-NRUploadTests.release.xcconfig */,
+				DA9B1C68B5FF0074E256A153 /* Pods-NRUploadUITests.debug.xcconfig */,
+				3B051D3EA70E2B73107890AD /* Pods-NRUploadUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D0307E2720565841008CFE8F = {
+			isa = PBXGroup;
+			children = (
+				D0307E6520565869008CFE8F /* upload */,
+				D0307E3220565841008CFE8F /* NRUpload */,
+				D0307E4B20565841008CFE8F /* NRUploadTests */,
+				D0307E5620565841008CFE8F /* NRUploadUITests */,
+				D0307E3120565841008CFE8F /* Products */,
+				46DE1D580CF8DE9409A76CD0 /* Pods */,
+				EBA3821DB9EC8E70F8A75BE8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D0307E3120565841008CFE8F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D0307E3020565841008CFE8F /* NRUpload.app */,
+				D0307E4820565841008CFE8F /* NRUploadTests.xctest */,
+				D0307E5320565841008CFE8F /* NRUploadUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D0307E3220565841008CFE8F /* NRUpload */ = {
+			isa = PBXGroup;
+			children = (
+				D0307E3320565841008CFE8F /* AppDelegate.h */,
+				D0307E3420565841008CFE8F /* AppDelegate.m */,
+				D0307E3620565841008CFE8F /* ViewController.h */,
+				D0307E3720565841008CFE8F /* ViewController.m */,
+				D0307E3920565841008CFE8F /* Main.storyboard */,
+				D0307E3C20565841008CFE8F /* Assets.xcassets */,
+				D0307E3E20565841008CFE8F /* LaunchScreen.storyboard */,
+				D0307E4120565841008CFE8F /* Info.plist */,
+				D0307E4220565841008CFE8F /* main.m */,
+			);
+			path = NRUpload;
+			sourceTree = "<group>";
+		};
+		D0307E4B20565841008CFE8F /* NRUploadTests */ = {
+			isa = PBXGroup;
+			children = (
+				D0307E4C20565841008CFE8F /* NRUploadTests.m */,
+				D0307E4E20565841008CFE8F /* Info.plist */,
+			);
+			path = NRUploadTests;
+			sourceTree = "<group>";
+		};
+		D0307E5620565841008CFE8F /* NRUploadUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D0307E5720565841008CFE8F /* NRUploadUITests.m */,
+				D0307E5920565841008CFE8F /* Info.plist */,
+			);
+			path = NRUploadUITests;
+			sourceTree = "<group>";
+		};
+		D0307E6520565869008CFE8F /* upload */ = {
+			isa = PBXGroup;
+			children = (
+				D0307E7C20566F6A008CFE8F /* const */,
+				D0307E6C20566043008CFE8F /* Manager */,
+				D0307E6820565F7F008CFE8F /* Category */,
+			);
+			path = upload;
+			sourceTree = "<group>";
+		};
+		D0307E6820565F7F008CFE8F /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				D0307E6920565FA9008CFE8F /* NRFileManager.h */,
+				D0307E6A20565FA9008CFE8F /* NRFileManager.m */,
+				D0307E6D2056609A008CFE8F /* NSString+md5.h */,
+				D0307E6E2056609A008CFE8F /* NSString+md5.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		D0307E6C20566043008CFE8F /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				D0307E7920566F19008CFE8F /* NRUploadTask.h */,
+				D0307E7A20566F19008CFE8F /* NRUploadTask.m */,
+				D0307E7620566E3E008CFE8F /* NRUploadManager.h */,
+				D0307E7720566E3E008CFE8F /* NRUploadManager.m */,
+				D0307E7020566181008CFE8F /* NRFileStreamConfiguration.h */,
+				D0307E7120566181008CFE8F /* NRFileStreamConfiguration.m */,
+				D0307E73205662C4008CFE8F /* NRStreamFragment.h */,
+				D0307E74205662C4008CFE8F /* NRStreamFragment.m */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		D0307E7C20566F6A008CFE8F /* const */ = {
+			isa = PBXGroup;
+			children = (
+				D0307E7D20566F71008CFE8F /* Const.h */,
+				D0307E7E20566F71008CFE8F /* Const.m */,
+			);
+			path = const;
+			sourceTree = "<group>";
+		};
+		EBA3821DB9EC8E70F8A75BE8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3E3F5882B39A886E97153BA6 /* libPods-NRUpload.a */,
+				A6EED211169CA1D8DB117006 /* libPods-NRUploadTests.a */,
+				3EA0977A44A7E4BFB4AE5DC9 /* libPods-NRUploadUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D0307E2F20565841008CFE8F /* NRUpload */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0307E5C20565841008CFE8F /* Build configuration list for PBXNativeTarget "NRUpload" */;
+			buildPhases = (
+				89E6F7E22C66EB5EAADC48BD /* [CP] Check Pods Manifest.lock */,
+				D0307E2C20565841008CFE8F /* Sources */,
+				D0307E2D20565841008CFE8F /* Frameworks */,
+				D0307E2E20565841008CFE8F /* Resources */,
+				5C58C263113F1F5309B89F1A /* [CP] Embed Pods Frameworks */,
+				EEBCDF1900020C05A1E8FA99 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NRUpload;
+			productName = NRUpload;
+			productReference = D0307E3020565841008CFE8F /* NRUpload.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D0307E4720565841008CFE8F /* NRUploadTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0307E5F20565841008CFE8F /* Build configuration list for PBXNativeTarget "NRUploadTests" */;
+			buildPhases = (
+				4DB182DD5DBAFDA93F9FBBB4 /* [CP] Check Pods Manifest.lock */,
+				D0307E4420565841008CFE8F /* Sources */,
+				D0307E4520565841008CFE8F /* Frameworks */,
+				D0307E4620565841008CFE8F /* Resources */,
+				2B10F4C4E244E685DEF210A6 /* [CP] Embed Pods Frameworks */,
+				E36266B1D20FEBE2636C046D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D0307E4A20565841008CFE8F /* PBXTargetDependency */,
+			);
+			name = NRUploadTests;
+			productName = NRUploadTests;
+			productReference = D0307E4820565841008CFE8F /* NRUploadTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D0307E5220565841008CFE8F /* NRUploadUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0307E6220565841008CFE8F /* Build configuration list for PBXNativeTarget "NRUploadUITests" */;
+			buildPhases = (
+				F5E62514CF5BAE7B6C342939 /* [CP] Check Pods Manifest.lock */,
+				D0307E4F20565841008CFE8F /* Sources */,
+				D0307E5020565841008CFE8F /* Frameworks */,
+				D0307E5120565841008CFE8F /* Resources */,
+				818B81C322B6190FB3454C70 /* [CP] Embed Pods Frameworks */,
+				4DCED4B7F0951F1B041E3234 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D0307E5520565841008CFE8F /* PBXTargetDependency */,
+			);
+			name = NRUploadUITests;
+			productName = NRUploadUITests;
+			productReference = D0307E5320565841008CFE8F /* NRUploadUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D0307E2820565841008CFE8F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = Facebook;
+				TargetAttributes = {
+					D0307E2F20565841008CFE8F = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					D0307E4720565841008CFE8F = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D0307E2F20565841008CFE8F;
+					};
+					D0307E5220565841008CFE8F = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D0307E2F20565841008CFE8F;
+					};
+				};
+			};
+			buildConfigurationList = D0307E2B20565841008CFE8F /* Build configuration list for PBXProject "NRUpload" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D0307E2720565841008CFE8F;
+			productRefGroup = D0307E3120565841008CFE8F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D0307E2F20565841008CFE8F /* NRUpload */,
+				D0307E4720565841008CFE8F /* NRUploadTests */,
+				D0307E5220565841008CFE8F /* NRUploadUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D0307E2E20565841008CFE8F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0307E4020565841008CFE8F /* LaunchScreen.storyboard in Resources */,
+				D0307E3D20565841008CFE8F /* Assets.xcassets in Resources */,
+				D0307E3B20565841008CFE8F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0307E4620565841008CFE8F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0307E5120565841008CFE8F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2B10F4C4E244E685DEF210A6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NRUploadTests/Pods-NRUploadTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4DB182DD5DBAFDA93F9FBBB4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NRUploadTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4DCED4B7F0951F1B041E3234 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NRUploadUITests/Pods-NRUploadUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5C58C263113F1F5309B89F1A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NRUpload/Pods-NRUpload-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		818B81C322B6190FB3454C70 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NRUploadUITests/Pods-NRUploadUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		89E6F7E22C66EB5EAADC48BD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NRUpload-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E36266B1D20FEBE2636C046D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NRUploadTests/Pods-NRUploadTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EEBCDF1900020C05A1E8FA99 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NRUpload/Pods-NRUpload-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F5E62514CF5BAE7B6C342939 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NRUploadUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D0307E2C20565841008CFE8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0307E3820565841008CFE8F /* ViewController.m in Sources */,
+				D0307E6B20565FA9008CFE8F /* NRFileManager.m in Sources */,
+				D0307E75205662C4008CFE8F /* NRStreamFragment.m in Sources */,
+				D0307E6F2056609A008CFE8F /* NSString+md5.m in Sources */,
+				D0307E7820566E3E008CFE8F /* NRUploadManager.m in Sources */,
+				D0307E7F20566F71008CFE8F /* Const.m in Sources */,
+				D0307E7B20566F19008CFE8F /* NRUploadTask.m in Sources */,
+				D0307E4320565841008CFE8F /* main.m in Sources */,
+				D0307E7220566181008CFE8F /* NRFileStreamConfiguration.m in Sources */,
+				D0307E3520565841008CFE8F /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0307E4420565841008CFE8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0307E4D20565841008CFE8F /* NRUploadTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0307E4F20565841008CFE8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0307E5820565841008CFE8F /* NRUploadUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D0307E4A20565841008CFE8F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D0307E2F20565841008CFE8F /* NRUpload */;
+			targetProxy = D0307E4920565841008CFE8F /* PBXContainerItemProxy */;
+		};
+		D0307E5520565841008CFE8F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D0307E2F20565841008CFE8F /* NRUpload */;
+			targetProxy = D0307E5420565841008CFE8F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D0307E3920565841008CFE8F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D0307E3A20565841008CFE8F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D0307E3E20565841008CFE8F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D0307E3F20565841008CFE8F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D0307E5A20565841008CFE8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D0307E5B20565841008CFE8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D0307E5D20565841008CFE8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40D2FECAE160083BFCE1D294 /* Pods-NRUpload.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NRUpload/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Facebook.NRUpload;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D0307E5E20565841008CFE8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEC6B42080D004F70C3AE726 /* Pods-NRUpload.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NRUpload/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Facebook.NRUpload;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D0307E6020565841008CFE8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30AD1879AB4ED98552968D1E /* Pods-NRUploadTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NRUploadTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Facebook.NRUploadTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NRUpload.app/NRUpload";
+			};
+			name = Debug;
+		};
+		D0307E6120565841008CFE8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20E6C2895566700501871A4D /* Pods-NRUploadTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NRUploadTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Facebook.NRUploadTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NRUpload.app/NRUpload";
+			};
+			name = Release;
+		};
+		D0307E6320565841008CFE8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA9B1C68B5FF0074E256A153 /* Pods-NRUploadUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NRUploadUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Facebook.NRUploadUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NRUpload;
+			};
+			name = Debug;
+		};
+		D0307E6420565841008CFE8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B051D3EA70E2B73107890AD /* Pods-NRUploadUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NRUploadUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Facebook.NRUploadUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NRUpload;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D0307E2B20565841008CFE8F /* Build configuration list for PBXProject "NRUpload" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0307E5A20565841008CFE8F /* Debug */,
+				D0307E5B20565841008CFE8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0307E5C20565841008CFE8F /* Build configuration list for PBXNativeTarget "NRUpload" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0307E5D20565841008CFE8F /* Debug */,
+				D0307E5E20565841008CFE8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0307E5F20565841008CFE8F /* Build configuration list for PBXNativeTarget "NRUploadTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0307E6020565841008CFE8F /* Debug */,
+				D0307E6120565841008CFE8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0307E6220565841008CFE8F /* Build configuration list for PBXNativeTarget "NRUploadUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0307E6320565841008CFE8F /* Debug */,
+				D0307E6420565841008CFE8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D0307E2820565841008CFE8F /* Project object */;
+}
